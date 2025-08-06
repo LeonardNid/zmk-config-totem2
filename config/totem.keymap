@@ -143,6 +143,7 @@
  * └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
  */
 #define QZ_GT        NUBS      // <
+#define QZ_LW        COLON     // >
 #define QZ_Y         Z      
 #define QZ_X         X
 #define QZ_C         C
@@ -166,6 +167,12 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+
+#include "zmk-helpers/helper.h"
+// Source desired key-position labels
+#include "zmk-helpers/key-labels/glove80.h"
+// Source unicode-chars for desired languages
+#include "zmk-helpers/unicode-chars/german.dtsi"
 
 #define DEF        0
 #define SYM         1
@@ -204,6 +211,18 @@
 
     combos {
         compatible = "zmk,combos";
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <22, 23>;
+            layers = <0>;
+            bindings = <&kp DEL>;
+        }
+        combo_ß {
+            timeout-ms = <50>;
+            key-positions = <26, 27>;
+            layers = <0>;
+            bindings = <&kp de_eszett>;
+        }
     };
 
     keymap {
@@ -212,40 +231,40 @@
         DEF {
             label = "DEF";
             bindings = <
-                    &kp Q           &kp W          &kp E          &kp R           &kp T      /**/    &kp QZ_Y    &kp U        &kp I         &kp O       &kp P
-                    &kp QZ_PERCENT  &hm LALT S     &hm LCTRL D    &hm LSHIFT F    &kp G      /**/    &kp H       &hm RSHFT J  &hm RCTRL K   &hm RALT L  &hm RGUI QZ_DOT
-    &lt 3 ESCAPE    &kp QZ_Z        &kp X          &kp C          &kp V           &kp B      /**/    &kp N       &kp M        &kp QZ_AE     &kp QZ_OE   &kp QZ_UE        &kp COMMA
-                                               &kp TAB        &kp ENTER       &kp SPACE  /**/    &kp BSPC    &to SYM      &to NAV
+                    &kp Q           &kp W          &kp E          &kp R           &kp T      /**/    &kp QZ_Z    &kp U        &kp I         &kp O       &kp P
+                    &hm LGUI A      &hm LALT S     &hm LCTRL D    &hm LSHIFT F    &kp G      /**/    &kp H       &hm RSHFT J  &hm RCTRL K   &hm RALT L  &hm RGUI QZ_DOT
+    &kp ESCAPE      &kp QZ_Y        &kp X          &kp C          &kp V           &kp B      /**/    &kp N       &kp M        &kp QZ_AE     &kp QZ_OE   &kp QZ_UE        &kp COMMA
+                                                   &kp TAB        &kp ENTER       &kp SPACE  /**/    &kp BSPC    &to SYM      &to NAV
             >;
         };
 
         SYM {
             label = "SYM";
             bindings = <
-                    &kp Q       &kp QZ_DOUBLE_QUOTES          &kp E          &kp R           &kp QZ_EXCLAMATION      /**/    &kp QZ_Y    &kp U        &kp I         &kp O       &kp P
-                    &hm LGUI A  &hm LALT S                    &hm LCTRL D    &hm LSHIFT F    &kp G                   /**/    &kp H       &hm RSHFT J  &hm RCTRL K   &hm RALT L  &hm RGUI QZ_DOT
-    &lt 3 ESCAPE    &kp QZ_USD  &kp X                         &kp C          &kp V           &kp B                   /**/    &kp N       &kp M        &kp QZ_AE     &kp QZ_OE   &kp QZ_UE        &kp COMMA
-                                                              &kp TAB        &kp ENTER       &kp SPACE               /**/    &kp BSPC    &to SYM      &to NAV
+                    &kp QZ_TILDE   &kp QZ_DOUBLE_QUOTES    &kp QZ_LEFT_BRACE           &kp QZ_RIGHT_BRACE              &kp QZ_EXCLAMATION      /**/    &kp QZ_PLUS  &kp 7   &kp 8   &kp 9   &kp QZ_ASTERISK
+                    &kp QZ_PERCENT &kp QZ_SLASH            &kp QZ_LEFT_BRACKET         &kp QZ_RIGHT_BRACKET            &kp QZ_QMARK            /**/    &kp QZ_MINUS &kp 4   &kp 5   &kp 6   &kp QZ_COLON
+    &kp QZ_GRAVE    &kp QZ_USD     &kp QZ_HASH             &kp QZ_LEFT_PARENTHESIS     &kp QZ_RIGHT_PARENTHESIS        &kp QZ_AMPERSAND        /**/    &kp 0        &kp 1   &kp 2   &kp 3   &kp QZ_EQUAL      &kp QZ_SEMICOLON
+                                                           &trans                      &mo SYM2                        &to DEF                 /**/    &kp Enter    &mo SYM2 &to NAV
             >;
         };
-
+>
         SYM2 {
             label = "SYM2";
             bindings = <
-                   &kp Q       &kp W          &kp E         &kp R      &kp T    &kp Y        &kp U        &kp I       &kp O               &kp P
-              &hm LGUI A  &hm LALT S    &hm LCTRL D  &hm LSHIFT F      &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
-&lt 3 ESCAPE       &kp Z       &kp X          &kp C         &kp V      &kp B    &kp N        &kp M    &kp COMMA     &kp DOT           &kp SLASH  &lt 4 APOSTROPHE
-                                      &mt LCTRL DEL     &lt 1 TAB  &kp SPACE  &kp RET   &lt 2 BSPC    &kp MINUS
+                    &trans        &trans             &trans         &trans      &trans       /**/     &trans        &kp f9  &kp f10  &kp f11 &kp f12 
+                    &kp QZ_CARET  &kp QZ_BACKSLASH   &kp QZ_GT      &kp QZ_LW   &kp QZ_PIPE  /**/     &kp QZ_UNDER  &kp f5  &kp f6   &kp f7  &kp f8
+&kp QZ_SINGLE_QUOTE &kp QZ_EURO   &kp QZ_AT          &trans         &trans      &trans       /**/     &trans        &kp f1  &kp f2   &kp f3  &kp f4  &trans
+                                                     &trans         &trans      &trans       /**/     &trans        &trans  &trans
             >;
         };
 
         Nav {
             label = "Nav";
             bindings = <
-                      &trans       &trans  &kp UP_ARROW     &trans  &kp LBRC  &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9         &kp PLUS
-              &kp LEFT_SHIFT     &kp LEFT      &kp DOWN  &kp RIGHT  &kp LBKT  &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6        &kp MINUS
-&kp LEFT_ALT          &trans  &kp PAGE_UP        &trans  &kp PG_DN  &kp LPAR  &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
-                                                 &trans     &trans    &trans    &trans        &trans  &kp NUMBER_0
+                    &trans      &trans     &kp HOME     &kp PAGE_UP      &trans    /**/     &kp C_VOL_UP  &trans    &trans    &trans     &trans 
+                    &trans      &trans     &kp END      &kp PAGE_DOWN    &trans    /**/     &kp C_VOL_DN  &kp LEFT  &kp UP    &kp RIGHT  &trans
+        &trans      &trans      &trans     &trans       &trans           &trans    /**/     &kp F24       &trans    &kp DOWN  &trans     &trans  &trans
+                                           &trans       &trans           &to DEF   /**/     &kp SPACE     &to SZM   &kp RCTRL
             >;
         };
     };
