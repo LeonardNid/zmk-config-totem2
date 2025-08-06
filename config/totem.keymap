@@ -228,14 +228,14 @@
                     &kp QZ_TILDE   &kp QZ_DOUBLE_QUOTES    &kp QZ_LEFT_BRACE           &kp QZ_RIGHT_BRACE              &kp QZ_EXCLAMATION      /**/    &kp QZ_PLUS  &kp 7    &kp 8    &kp 9   &kp QZ_ASTERISK
                     &kp QZ_PERCENT &kp QZ_SLASH            &kp QZ_LEFT_BRACKET         &kp QZ_RIGHT_BRACKET            &kp QZ_QMARK            /**/    &kp QZ_MINUS &kp 4    &kp 5    &kp 6   &kp QZ_COLON
     &kp QZ_GRAVE    &kp QZ_USD     &kp QZ_HASH             &kp QZ_LEFT_PARENTHESIS     &kp QZ_RIGHT_PARENTHESIS        &kp QZ_AMPERSAND        /**/    &kp 0        &kp 1    &kp 2    &kp 3   &kp QZ_EQUAL      &kp QZ_SEMICOLON
-                                                           &trans         &trans      &to DEF       /**/     &trans        &trans  &trans
+                                                           &trans         &mo SYMM      &to DEF       /**/     &trans        &trans  &trans
 
             >;
         };
 
         SYMM {
             label = "SYMM";
-            bindings = <
+            bindings = <https://www.youtube.com/
                     &trans        &trans             &trans         &trans      &trans       /**/     &trans        &kp F9  &kp F10  &kp F11 &kp F12 
                     &kp QZ_CARET  &kp QZ_BACKSLASH   &kp QZ_GT      &kp QZ_LW   &kp QZ_PIPE  /**/     &kp QZ_UNDER  &kp F5  &kp F6   &kp F7  &kp F8
 &kp QZ_SINGLE_QUOTE &kp QZ_EURO   &kp QZ_AT          &trans         &trans      &trans       /**/     &trans        &kp F1  &kp F2   &kp F3  &kp F4  &trans
