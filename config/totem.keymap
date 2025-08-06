@@ -58,11 +58,11 @@
  * │     │     │     │     │     │  [  │  ]  │  |  │  {  │  }  │     │     │
  * └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
  */
-#define QZ_LEFT_BRACKET  LS(LA(N8)) // [
-#define QZ_RIGHT_BRACKET LS(LA(N9)) // ]
-#define QZ_PIPE          LS(LA(NUBS)) // |
-#define QZ_LEFT_BRACE    LS(LA(N7)) // {
-#define QZ_RIGHT_BRACE   LS(LA(N0)) // }
+#define QZ_LEFT_BRACKET  LC(LA(N8)) // [
+#define QZ_RIGHT_BRACKET LC(LA(N9)) // ]
+#define QZ_PIPE          LC(LA(NUBS)) // |
+#define QZ_LEFT_BRACE    LC(LA(N7)) // {
+#define QZ_RIGHT_BRACE   LC(LA(N0)) // }
 
 /*
  * Alt shifted number row
@@ -70,8 +70,8 @@
  * │     │     │     │     │     │     │  ^  │  \  │     │     │     │     │
  * └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
  */
-#define QZ_BACKSLASH         LS(LA(N7)) /* \ */
-#define QZ_CARET             LS(LA(N6)) // ^
+#define QZ_BACKSLASH         LC(LA(MINUS)) /* \ */
+#define QZ_CARET             LS(GRAVE) // ^
 
 /*
  * Q row
