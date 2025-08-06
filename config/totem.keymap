@@ -219,12 +219,7 @@
             layers = <0>;
             bindings = <&kp DEL>;
         }
-        combo_ß {
-            timeout-ms = <50>;
-            key-positions = <26, 27>;
-            layers = <0>;
-            bindings = <&kp de_eszett>;
-        }
+
 
     };
 
