@@ -169,9 +169,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
-#define DEF        0
+#define DEF         0
 #define SYM         1
-#define SYM2        2
+#define SYMM        2
 #define NAV         3
 
 
@@ -232,8 +232,8 @@
             >;
         };
 
-        SYM2 {
-            label = "SYM2";
+        SYMM {
+            label = "SYMM";
             bindings = <
                     &trans        &trans             &trans         &trans      &trans       /**/     &trans        &kp f9  &kp f10  &kp f11 &kp f12 
                     &kp QZ_CARET  &kp QZ_BACKSLASH   &kp QZ_GT      &kp QZ_LW   &kp QZ_PIPE  /**/     &kp QZ_UNDER  &kp f5  &kp f6   &kp f7  &kp f8
