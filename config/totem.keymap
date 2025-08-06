@@ -58,11 +58,11 @@
  * │     │     │     │     │     │  [  │  ]  │  |  │  {  │  }  │     │     │
  * └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
  */
-#define QZ_LEFT_BRACKET  LA(N5) // [
-#define QZ_RIGHT_BRACKET LA(N6) // ]
-#define QZ_PIPE          LA(N7) // |
-#define QZ_LEFT_BRACE    LA(N8) // {
-#define QZ_RIGHT_BRACE   LA(N9) // }
+#define QZ_LEFT_BRACKET  LS(LA(N8)) // [
+#define QZ_RIGHT_BRACKET LS(LA(N9)) // ]
+#define QZ_PIPE          LS(LA(NUBS)) // |
+#define QZ_LEFT_BRACE    LS(LA(N7)) // {
+#define QZ_RIGHT_BRACE   LS(LA(N0)) // }
 
 /*
  * Alt shifted number row
@@ -98,7 +98,7 @@
  * │     │     │     │     │     │     │     │     │     │     │     │  *  │  '  |
  * └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
  */
-#define QZ_ASTERISK     LS(N8) // *
+#define QZ_ASTERISK     LS(RIGHT_BRACKET) // *
 #define QZ_SINGLE_QUOTE LS(BACKSLASH) // '
 
 /*
@@ -134,7 +134,7 @@
  * │     │     │     │     │     │     │     │     │  @  │     │     │     │     |
  * └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
  */
-#define QZ_AT LA(L) // @
+#define QZ_AT LS(LA(Q)) // @
 
 /*
  * Bottom row
@@ -143,7 +143,7 @@
  * └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
  */
 #define QZ_GT        NUBS      // <
-#define QZ_LW        COLON     // >
+#define QZ_LW        LS(NUBS)     // >
 #define QZ_Y         Z      
 #define QZ_X         X
 #define QZ_C         C
