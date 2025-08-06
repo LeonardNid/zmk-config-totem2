@@ -169,9 +169,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
-
-
-
 #define DEF         0
 #define SYM         1
 #define SYMM        2
@@ -209,14 +206,6 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_del {
-            timeout-ms = <50>;
-            key-positions = <22, 23>;
-            layers = <0>;
-            bindings = <&kp DEL>;
-        }
-
-
     };
 
     keymap {
