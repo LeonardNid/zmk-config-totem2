@@ -62,7 +62,7 @@
 #define QZ_RIGHT_BRACKET LC(LA(N9)) // ]
 #define QZ_PIPE          LC(LA(NUBS)) // |
 #define QZ_LEFT_BRACE    LC(LA(N7)) // {
-#define QZ_RIGHT_BRACE   RC(RA(N0)) // }
+#define QZ_RIGHT_BRACE   RA(N0) // }
 
 /*
  * Alt shifted number row
