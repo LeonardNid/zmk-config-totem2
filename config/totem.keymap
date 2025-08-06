@@ -168,6 +168,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#include "zmk-helpers/helper.h"
+// Source desired key-position labels
+#include "zmk-helpers/key-labels/glove80.h"
+// Source unicode-chars for desired languages
+#include "zmk-helpers/unicode-chars/german.dtsi"
 
 #define DEF        0
 #define SYM         1
@@ -206,6 +211,18 @@
 
     combos {
         compatible = "zmk,combos";
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <22, 23>;
+            layers = <0>;
+            bindings = <&kp DEL>;
+        }
+        combo_ß {
+            timeout-ms = <50>;
+            key-positions = <26, 27>;
+            layers = <0>;
+            bindings = <&kp de_eszett>;
+        }
     };
 
     keymap {
@@ -221,5 +238,34 @@
             >;
         };
 
+        SYM {
+            label = "SYM";
+            bindings = <
+                    &kp QZ_TILDE   &kp QZ_DOUBLE_QUOTES    &kp QZ_LEFT_BRACE           &kp QZ_RIGHT_BRACE              &kp QZ_EXCLAMATION      /**/    &kp QZ_PLUS  &kp 7   &kp 8   &kp 9   &kp QZ_ASTERISK
+                    &kp QZ_PERCENT &kp QZ_SLASH            &kp QZ_LEFT_BRACKET         &kp QZ_RIGHT_BRACKET            &kp QZ_QMARK            /**/    &kp QZ_MINUS &kp 4   &kp 5   &kp 6   &kp QZ_COLON
+    &kp QZ_GRAVE    &kp QZ_USD     &kp QZ_HASH             &kp QZ_LEFT_PARENTHESIS     &kp QZ_RIGHT_PARENTHESIS        &kp QZ_AMPERSAND        /**/    &kp 0        &kp 1   &kp 2   &kp 3   &kp QZ_EQUAL      &kp QZ_SEMICOLON
+                                                           &trans                      &mo SYM2                        &to DEF                 /**/    &kp Enter    &mo SYM2 &to NAV
+            >;
+        };
+        
+        SYM2 {
+            label = "SYM2";
+            bindings = <
+                    &trans        &trans             &trans         &trans      &trans       /**/     &trans        &kp f9  &kp f10  &kp f11 &kp f12 
+                    &kp QZ_CARET  &kp QZ_BACKSLASH   &kp QZ_GT      &kp QZ_LW   &kp QZ_PIPE  /**/     &kp QZ_UNDER  &kp f5  &kp f6   &kp f7  &kp f8
+&kp QZ_SINGLE_QUOTE &kp QZ_EURO   &kp QZ_AT          &trans         &trans      &trans       /**/     &trans        &kp f1  &kp f2   &kp f3  &kp f4  &trans
+                                                     &trans         &trans      &trans       /**/     &trans        &trans  &trans
+            >;
+        };
+
+        Nav {
+            label = "Nav";
+            bindings = <
+                    &trans      &trans     &kp HOME     &kp PAGE_UP      &trans    /**/     &kp C_VOL_UP  &trans    &trans    &trans     &trans 
+                    &trans      &trans     &kp END      &kp PAGE_DOWN    &trans    /**/     &kp C_VOL_DN  &kp LEFT  &kp UP    &kp RIGHT  &trans
+        &trans      &trans      &trans     &trans       &trans           &trans    /**/     &kp F24       &trans    &kp DOWN  &trans     &trans  &trans
+                                           &trans       &trans           &to DEF   /**/     &kp SPACE     &to SZM   &kp RCTRL
+            >;
+        };
     };
 };
