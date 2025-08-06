@@ -218,6 +218,12 @@
             layers = <0>;
             bindings = <&kp DEL>;
         };
+        combo_de_eszett {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            layers = <0>;
+            bindings = <&kp de_eszett>;
+        };
 
     };
 
@@ -262,7 +268,7 @@
             bindings = <
                     &trans      &trans     &kp HOME     &kp PAGE_UP      &trans    /**/     &kp C_VOL_UP  &trans    &trans    &trans     &trans 
                     &trans      &trans     &kp END      &kp PAGE_DOWN    &trans    /**/     &kp C_VOL_DN  &kp LEFT  &kp UP    &kp RIGHT  &trans
-        &trans      &trans      &trans     &trans       &trans           &trans    /**/     &kp F24       &trans    &kp DOWN  &trans     &trans  &trans
+        &trans      &trans      &trans     &trans       &trans           &trans    /**/     &kp F24       &kp F     &kp DOWN  &trans     &trans  &trans
                                            &trans       &trans           &to DEF   /**/     &kp SPACE     &to SYM   &kp RCTRL
             >;
         };
