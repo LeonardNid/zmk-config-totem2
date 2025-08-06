@@ -170,6 +170,9 @@
 
 
 #define DEF        0
+#define SYM         1
+#define SYM2        2
+#define NAV         3
 
 
 &mt {
@@ -211,9 +214,9 @@
         DEF {
             label = "DEF";
             bindings = <
-                    &kp Q           &kp W          &kp E          &kp R           &kp T      /**/    &kp QZ_Z    &kp U        &kp I         &kp O       &kp P
+                    &kp Q           &kp W          &kp E          &kp R           &kp T      /**/    &kp Y    &kp U        &kp I         &kp O       &kp P
                     &hm LGUI A      &hm LALT S     &hm LCTRL D    &hm LSHIFT F    &kp G      /**/    &kp H       &hm RSHFT J  &hm RCTRL K   &hm RALT L  &hm RGUI QZ_DOT
-    &kp ESCAPE      &kp QZ_Y        &kp X          &kp C          &kp V           &kp B      /**/    &kp N       &kp M        &kp QZ_AE     &kp QZ_OE   &kp QZ_UE        &kp COMMA
+    &kp ESCAPE      &kp Z        &kp X          &kp C          &kp V           &kp B      /**/    &kp N       &kp M        &kp A     &kp O   &kp U        &kp COMMA
                                                    &kp TAB        &kp ENTER       &kp SPACE  /**/    &kp BSPC    &to SYM      &to NAV
             >;
         };
