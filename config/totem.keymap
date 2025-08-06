@@ -226,8 +226,8 @@
             label = "SYM";
             bindings = <
                     &kp BSPC   &kp BSPC    &kp BSPC           &kp BSPC              &kp BSPC      /**/    &kp BSPC  &kp 7   &kp 8   &kp 9   &kp BSPC
-                    &kp QZ_PERCENT &kp QZ_SLASH            &kp QZ_LEFT_BRACKET         &kp QZ_RIGHT_BRACKET            &kp QZ_QMARK            /**/    &kp QZ_MINUS &kp 4   &kp 5   &kp 6   &kp QZ_COLON
-    &kp QZ_GRAVE    &kp QZ_USD     &kp QZ_HASH             &kp QZ_LEFT_PARENTHESIS     &kp QZ_RIGHT_PARENTHESIS        &kp QZ_AMPERSAND        /**/    &kp 0        &kp 1   &kp 2   &kp 3   &kp QZ_EQUAL      &kp QZ_SEMICOLON
+                    &kp BSPC &kp BSPC            &kp BSPC         &kp BSPC            &kp BSPC            /**/    &kp BSPC &kp 4   &kp 5   &kp 6   &kp BSPC
+    &kp BSPC    &kp BSPC     &kp BSPC             &kp BSPC     &kp BSPC        &kp BSPC        /**/    &kp 0        &kp 1   &kp 2   &kp 3   &kp BSPC      &kp BSPC
                                                            &trans                      &mo SYM2                        &to DEF                 /**/    &kp Enter    &mo SYM2 &to NAV
             >;
         };
