@@ -62,7 +62,7 @@
 #define QZ_RIGHT_BRACKET LC(LA(N9)) // ]
 #define QZ_PIPE          LC(LA(NUBS)) // |
 #define QZ_LEFT_BRACE    LC(LA(N7)) // {
-#define QZ_RIGHT_BRACE   LC(LA(N0)) // }
+#define QZ_RIGHT_BRACE   RC(RA(N0)) // }
 
 /*
  * Alt shifted number row
@@ -71,7 +71,7 @@
  * └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
  */
 #define QZ_BACKSLASH         LC(LA(MINUS)) /* \ */
-#define QZ_CARET             LS(GRAVE) // ^
+#define QZ_CARET             GRAVE // ^
 
 /*
  * Q row
@@ -107,7 +107,7 @@
  * │     │     │  €  │     │     │     │     │     │     │     │     │     │     |
  * └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
  */
-#define QZ_EURO LA(E) // €
+#define QZ_EURO LC(LA(E)) // €
 
 /*
  * A row
@@ -134,7 +134,7 @@
  * │     │     │     │     │     │     │     │     │  @  │     │     │     │     |
  * └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
  */
-#define QZ_AT LS(LA(Q)) // @
+#define QZ_AT LC(LA(Q)) // @
 
 /*
  * Bottom row
@@ -158,7 +158,7 @@
 #define QZ_SEMICOLON LS(COMMA) // ;
 
 #define QZ_UNDER LS(QZ_MINUS)
-#define QZ_TILDE LA(N)
+#define QZ_TILDE LC(LA(RIGHT_BRACKET))
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
