@@ -228,7 +228,7 @@
                     &kp BSPC   &kp BSPC    &kp BSPC           &kp BSPC              &kp BSPC      /**/    &kp BSPC  &kp 7   &kp 8   &kp 9   &kp BSPC
                     &kp BSPC &kp BSPC            &kp BSPC         &kp BSPC            &kp BSPC            /**/    &kp BSPC &kp 4   &kp 5   &kp 6   &kp BSPC
     &kp BSPC    &kp BSPC     &kp BSPC             &kp BSPC     &kp BSPC        &kp BSPC        /**/    &kp 0        &kp 1   &kp 2   &kp 3   &kp BSPC      &kp BSPC
-                                                           &trans                      &mo SYM2                        &to DEF                 /**/    &kp Enter    &mo SYM2 &to NAV
+                                                           &kp TAB        &kp ENTER       &kp SPACE  /**/    &kp BSPC    &to SYM      &to NAV
             >;
         };
 
