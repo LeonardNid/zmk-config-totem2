@@ -98,7 +98,7 @@
  * │     │     │     │     │     │     │     │     │     │     │     │  *  │  '  |
  * └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
  */
-#define QZ_ASTERISK     LS(BACKSLASH) // *
+#define QZ_ASTERISK     LS(8) // *
 #define QZ_SINGLE_QUOTE LS(BACKSLASH) // '
 
 /*
@@ -263,7 +263,7 @@
                     &trans      &trans     &kp HOME     &kp PAGE_UP      &kp F23    /**/     &kp C_VOL_UP  &trans    &trans    &trans     &trans 
                     &trans      &trans     &kp END      &kp PAGE_DOWN    &kp F22    /**/     &kp C_VOL_DN  &kp LEFT  &kp UP    &kp RIGHT  &trans
         &trans      &trans      &trans     &kp F19      &kp F20          &kp F21    /**/     &kp F24       &kp F     &kp DOWN  &trans     &trans  &trans
-                                           &trans       &kp LC(QZ_DOT)           &to DEF    /**/     &kp SPACE     &to SYM   &kp RCTRL
+                                           &trans       &kp LC(QZ_DOT)   &to DEF    /**/     &kp SPACE     &to SYM   &kp RCTRL
             >;
         };
 
