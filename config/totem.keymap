@@ -225,10 +225,11 @@
         SYM {
             label = "SYM";
             bindings = <
-                    &kp QZ_TILDE   &kp QZ_DOUBLE_QUOTES    &kp QZ_LEFT_BRACE           &kp QZ_RIGHT_BRACE              &kp QZ_EXCLAMATION      /**/    &kp QZ_PLUS  &kp 7   &kp 8   &kp 9   &kp QZ_ASTERISK
-                    &kp QZ_PERCENT &kp QZ_SLASH            &kp QZ_LEFT_BRACKET         &kp QZ_RIGHT_BRACKET            &kp QZ_QMARK            /**/    &kp QZ_MINUS &kp 4   &kp 5   &kp 6   &kp QZ_COLON
-    &kp QZ_GRAVE    &kp QZ_USD     &kp QZ_HASH             &kp QZ_LEFT_PARENTHESIS     &kp QZ_RIGHT_PARENTHESIS        &kp QZ_AMPERSAND        /**/    &kp 0        &kp 1   &kp 2   &kp 3   &kp QZ_EQUAL      &kp QZ_SEMICOLON
-                                                           &kp TAB        &kp ENTER       &kp SPACE  /**/    &kp BSPC    &to SYM      &to NAV
+                    &kp QZ_TILDE   &kp QZ_DOUBLE_QUOTES    &kp QZ_LEFT_BRACE           &kp QZ_RIGHT_BRACE              &kp QZ_EXCLAMATION      /**/    &kp QZ_PLUS  &kp 7    &kp 8    &kp 9   &kp QZ_ASTERISK
+                    &kp QZ_PERCENT &kp QZ_SLASH            &kp QZ_LEFT_BRACKET         &kp QZ_RIGHT_BRACKET            &kp QZ_QMARK            /**/    &kp QZ_MINUS &kp 4    &kp 5    &kp 6   &kp QZ_COLON
+    &kp QZ_GRAVE    &kp QZ_USD     &kp QZ_HASH             &kp QZ_LEFT_PARENTHESIS     &kp QZ_RIGHT_PARENTHESIS        &kp QZ_AMPERSAND        /**/    &kp 0        &kp 1    &kp 2    &kp 3   &kp QZ_EQUAL      &kp QZ_SEMICOLON
+                                                           &trans                      &mo SYMM                        &to DEF                 /**/    &kp Enter    &mo SYMM &to NAV
+
             >;
         };
 
