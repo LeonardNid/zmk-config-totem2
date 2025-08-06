@@ -232,5 +232,16 @@
             >;
         };
 
+        SYM2 {
+            label = "SYM2";
+            bindings = <
+                    &trans        &trans             &trans         &trans      &trans       /**/     &trans        &kp f9  &kp f10  &kp f11 &kp f12 
+                    &kp QZ_CARET  &kp QZ_BACKSLASH   &kp QZ_GT      &kp QZ_LW   &kp QZ_PIPE  /**/     &kp QZ_UNDER  &kp f5  &kp f6   &kp f7  &kp f8
+&kp QZ_SINGLE_QUOTE &kp QZ_EURO   &kp QZ_AT          &trans         &trans      &trans       /**/     &trans        &kp f1  &kp f2   &kp f3  &kp f4  &trans
+                                                     &trans         &trans      &trans       /**/     &trans        &trans  &trans
+            >;
+        };
+
+
     };
 };
