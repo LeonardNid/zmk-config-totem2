@@ -218,6 +218,12 @@
             layers = <0>;
             bindings = <&kp QZ_SZ>;
         };
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            layers = <0>;
+            bindings = <&kp DEL>;
+        };
 
     };
 
@@ -238,10 +244,10 @@
         SYM {
             label = "SYM";
             bindings = <
-                    &kp QZ_TILDE   &kp QZ_DOUBLE_QUOTES    &kp QZ_LEFT_BRACE           &kp QZ_RIGHT_BRACE              &kp QZ_EXCLAMATION      /**/    &kp QZ_PLUS  &kp 7    &kp 8    &kp 9   &kp QZ_ASTERISK
-                    &kp QZ_PERCENT &kp QZ_SLASH            &kp QZ_LEFT_BRACKET         &kp QZ_RIGHT_BRACKET            &kp QZ_QMARK            /**/    &kp QZ_MINUS &kp 4    &kp 5    &kp 6   &kp QZ_COLON
-    &kp QZ_GRAVE    &kp QZ_USD     &kp QZ_HASH             &kp QZ_LEFT_PARENTHESIS     &kp QZ_RIGHT_PARENTHESIS        &kp QZ_AMPERSAND        /**/    &kp 0        &kp 1    &kp 2    &kp 3   &kp QZ_EQUAL      &kp QZ_SEMICOLON
-                                                                                                    &trans         &mo SYMM      &to DEF       /**/     &kp ENTER        &mo SYMM  &to NAV
+                    &kp QZ_TILDE   &kp QZ_DOUBLE_QUOTES    &kp QZ_LEFT_BRACE           &kp QZ_RIGHT_BRACE              &kp QZ_EXCLAMATION      /**/    &kp QZ_PLUS  &kp N7    &kp N8    &kp N9   &kp QZ_ASTERISK
+                    &kp QZ_PERCENT &kp QZ_SLASH            &kp QZ_LEFT_BRACKET         &kp QZ_RIGHT_BRACKET            &kp QZ_QMARK            /**/    &kp QZ_MINUS &kp N4    &kp N5    &kp N6   &kp QZ_COLON
+    &kp QZ_GRAVE    &kp QZ_USD     &kp QZ_HASH             &kp QZ_LEFT_PARENTHESIS     &kp QZ_RIGHT_PARENTHESIS        &kp QZ_AMPERSAND        /**/    &kp N0        &kp N1    &kp N2    &kp N3   &kp QZ_EQUAL      &kp QZ_SEMICOLON
+                                                                                                    &trans         &mo SYMM      &to DEF       /**/    &kp ENTER        &mo SYMM  &to NAV
 
             >;
         };
@@ -260,10 +266,10 @@
         Nav {
             label = "Nav";
             bindings = <
-                    &trans      &trans     &kp HOME     &kp PAGE_UP      &trans    /**/     &kp C_VOL_UP  &trans    &trans    &trans     &trans 
-                    &trans      &trans     &kp END      &kp PAGE_DOWN    &trans    /**/     &kp C_VOL_DN  &kp LEFT  &kp UP    &kp RIGHT  &trans
-        &trans      &trans      &trans     &trans       &trans           &trans    /**/     &kp F24       &kp F     &kp DOWN  &trans     &trans  &trans
-                                           &trans       &trans           &to DEF   /**/     &kp SPACE     &to SYM   &kp RCTRL
+                    &trans      &trans     &kp HOME     &kp PAGE_UP      &kb F23    /**/     &kp C_VOL_UP  &trans    &trans    &trans     &trans 
+                    &trans      &trans     &kp END      &kp PAGE_DOWN    &kb F22    /**/     &kp C_VOL_DN  &kp LEFT  &kp UP    &kp RIGHT  &trans
+        &trans      &trans      &trans     &kb F19      &kb F20          &kb F21    /**/     &kp F24       &kp F     &kp DOWN  &trans     &trans  &trans
+                                           &trans       &trans           &to DEF    /**/     &kp SPACE     &to SYM   &kp RCTRL
             >;
         };
 
