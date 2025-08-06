@@ -98,7 +98,7 @@
  * │     │     │     │     │     │     │     │     │     │     │     │  *  │  '  |
  * └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
  */
-#define QZ_ASTERISK     LS(8) // *
+#define QZ_ASTERISK     LS(N8) // *
 #define QZ_SINGLE_QUOTE LS(BACKSLASH) // '
 
 /*
