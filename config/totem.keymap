@@ -224,24 +224,35 @@
     keymap {
         compatible = "zmk,keymap";
 
-        DEF {
+        DEF {            // neo
             label = "DEF";
             bindings = <
-                    &kp Q           &kp W          &kp E          &kp R           &kp T      /**/    &kp QZ_Z    &kp U        &kp I         &kp O       &kp P
-                    &hm LGUI A      &hm LALT S     &hm LCTRL D    &hm LSHIFT F    &kp G      /**/    &kp H       &hm RSHFT J  &hm RCTRL K   &hm RALT L  &hm RGUI QZ_DOT
-    &kp ESCAPE      &kp QZ_Y        &kp X          &kp C          &kp V           &kp B      /**/    &kp N       &kp M        &kp QZ_AE     &kp QZ_OE   &kp QZ_UE        &kp COMMA
+                    &kp X           &kp V          &kp L          &kp C           &kp W      /**/    &kp K       &kp H        &kp G         &kp F       &kp Q
+                    &hm LGUI U      &hm LALT I     &hm LCTRL A    &hm LSHIFT E    &kp O      /**/    &kp S       &hm RSHFT N  &hm RCTRL R   &hm RALT T  &hm RGUI D
+    &kp ESCAPE      &kp  QZ_UE      &kp QZ_OE      &kp QZ_AE      &kp P           &kp QZ_Z   /**/    &kp B       &kp M        &kp QZ_COMMA     &kp QZ_DOT   &kp J        &kp QZ_Y 
                                                    &kp TAB        &kp ENTER       &kp SPACE  /**/    &kp BSPC    &to SYM      &to NAV
             >;
         };
+
+
+    //     DEF {           // qwertz
+    //         label = "DEF";
+    //         bindings = <
+    //                 &kp Q           &kp W          &kp E          &kp R           &kp T      /**/    &kp QZ_Z    &kp U        &kp I         &kp O       &kp P
+    //                 &hm LGUI A      &hm LALT S     &hm LCTRL D    &hm LSHIFT F    &kp G      /**/    &kp H       &hm RSHFT J  &hm RCTRL K   &hm RALT L  &hm RGUI QZ_DOT
+    // &kp ESCAPE      &kp QZ_Y        &kp X          &kp C          &kp V           &kp B      /**/    &kp N       &kp M        &kp QZ_AE     &kp QZ_OE   &kp QZ_UE        &kp COMMA
+    //                                                &kp TAB        &kp ENTER       &kp SPACE  /**/    &kp BSPC    &to SYM      &to NAV
+    //         >;
+    //     };
 
     
         SYM {
             label = "SYM";
             bindings = <
-                    &kp QZ_TILDE   &kp QZ_DOUBLE_QUOTES    &kp QZ_LEFT_BRACE           &kp QZ_RIGHT_BRACE              &kp QZ_EXCLAMATION      /**/    &kp QZ_PLUS  &kp N7    &kp N8    &kp N9   &kp QZ_ASTERISK
-                    &kp QZ_PERCENT &kp QZ_SLASH            &kp QZ_LEFT_BRACKET         &kp QZ_RIGHT_BRACKET            &kp QZ_QMARK            /**/    &kp QZ_MINUS &kp N4    &kp N5    &kp N6   &kp QZ_COLON
-    &kp QZ_GRAVE    &kp QZ_USD     &kp QZ_HASH             &kp QZ_LEFT_PARENTHESIS     &kp QZ_RIGHT_PARENTHESIS        &kp QZ_AMPERSAND        /**/    &kp N0       &kp N1    &kp N2    &kp N3   &kp QZ_EQUAL      &kp QZ_SEMICOLON
-                                                                                                    &trans         &mo SYMM      &to DEF       /**/    &kp BSPC     &mo SYMM    &to NAV
+                    &kp QZ_TILDE        &kp QZ_DOUBLE_QUOTES    &kp QZ_LEFT_BRACE           &kp QZ_RIGHT_BRACE              &kp QZ_EXCLAMATION      /**/    &kp QZ_PLUS  &kp N7         &kp N8        &kp N9        &kp QZ_ASTERISK
+                    &hm LGUI QZ_PERCENT &hm LALT QZ_SLASH       &kp QZ_LEFT_BRACKET         &hm LCTRL QZ_RIGHT_BRACKET      &hm LSHIFT QZ_QMARK     /**/    &kp QZ_MINUS &hm RSHFT N4   &hm RCTRL N5  &hm RALT N6   &hm RGUI QZ_COLON
+    &kp QZ_GRAVE    &kp QZ_USD          &kp QZ_HASH             &kp QZ_LEFT_PARENTHESIS     &kp QZ_RIGHT_PARENTHESIS        &kp QZ_AMPERSAND        /**/    &kp N0       &kp N1         &kp N2        &kp N3        &kp QZ_EQUAL      &kp QZ_SEMICOLON
+                                                                                                         &trans         &mo SYMM      &to DEF       /**/    &kp BSPC     &mo SYMM    &to NAV
 
             >;
         };
