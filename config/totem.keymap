@@ -227,7 +227,7 @@
         DEF {            // neo
             label = "DEF";
             bindings = <
-                    &kp X           &kp V          &kp L          &kp C           &kp W      /**/    &kp H       &kp K        &kp G         &kp F       &kp Q
+                    &kp X           &kp V          &kp L          &kp C           &kp W      /**/    &kp K       &kp H        &kp G         &kp F       &kp Q
                     &hm LGUI U      &hm LALT I     &hm LCTRL A    &hm LSHIFT E    &kp O      /**/    &kp S       &hm RSHFT N  &hm RCTRL R   &hm RALT T  &hm RGUI D
     &kp ESCAPE      &kp  QZ_UE      &kp QZ_OE      &kp QZ_AE      &kp P           &kp QZ_Z   /**/    &kp B       &kp M        &kp QZ_COMMA  &kp QZ_DOT  &kp J        &kp QZ_Y 
                                                    &kp TAB        &kp ENTER       &kp SPACE  /**/    &kp BSPC    &to SYM      &to NAV
